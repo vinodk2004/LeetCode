@@ -8,4 +8,6 @@ class Solution:
                 ascending = False
             elif nums[i] < nums[i+1]:
                 decending = False
+            elif ascending == False == decending:
+                return False
         return ascending or decending

@@ -14,4 +14,4 @@ class Solution:
                     if j and grid[i][j-1] == 1:
                             perimeter -= 2
 
-        return perimeter
+        return perimeter 

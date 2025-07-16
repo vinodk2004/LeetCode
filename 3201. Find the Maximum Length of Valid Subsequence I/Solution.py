@@ -1,0 +1,11 @@
+class Solution:
+    def maximumLength(self, nums: List[int]) -> int:
+        longest = 0
+
+        for pattern in [[0,0], [0, 1], [1, 0], [1, 1]]:
+            count = 0
+            for num in nums:
+                if num%2 == pattern[count%2]:
+                    count += 1
+            longest = max(longest, count)
+        return longest

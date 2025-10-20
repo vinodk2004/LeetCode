@@ -1,13 +1,10 @@
 class Solution:
     def finalValueAfterOperations(self, operations: List[str]) -> int:
         x = 0
-        for op in operations:
-            if op == '++X':
+        for opr in operations:
+            if '+' in opr:
                 x += 1
-            elif op == 'X++':
-                x += 1
-            elif op == '--X':
-                x -= 1
-            elif op == 'X--':
+
+            elif '-' in opr:
                 x -= 1
         return x
